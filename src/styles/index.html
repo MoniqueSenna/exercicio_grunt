@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../dev/styles/compiled.css">
+
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <main>
+        <form>
+            <div class="titulo">
+                
+                <h1>Agenda de Contatos</h1>
+            </div>
+            
+            <input type="hidden" name="id"/>
+            <input type="text" name="nome" id="nome" maxlength="50" placeholder="Nome" required/>
+            <input type="text" name="telefone" id="tel" maxlength="50" placeholder="Telefone" required/>
+            <input type="submit" class="submit" value="Salvar"/>
+
+        </form>
+        
+        <div class="list">
+            <input id="pesquisa" type="text" placeholder="Pesquisar" onkeyup="listar(this.value)"/>
+            <ul>
+                
+            </ul>
+        </div>
+    </main>
+    
+
+
+    <script type="text/javascript" src="../../dist/styles/output.min.js"></script>
+    
+</body>
+</html>
